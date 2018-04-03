@@ -131,7 +131,8 @@ function listMessages(auth) {
     }
     console.log("response");
     console.log(response);
-    var labels = response.labels;
+    var messages = response.messages;
+    var nextPageToken = response.nextPageToken;
     if (labels.length == 0) {
       console.log('No messages found.');
     } else {
